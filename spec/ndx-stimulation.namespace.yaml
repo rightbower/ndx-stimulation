@@ -1,0 +1,22 @@
+namespaces:
+- author:
+  - Pamela Baker
+  contact:
+  - pamela.baker@alleninstitute.org
+  doc: An extension for building descriptions of 1D stimulus waveforms referenced
+    to an ontology.
+  name: ndx-stimulation
+  schema:
+  - namespace: core
+    neurodata_types:
+    - ElectricalSeries
+    - TimeSeries
+    - NWBDataInterface
+    - NWBContainer
+  - namespace: hdmf-common
+    neurodata_types:
+    - DynamicTableRegion
+    - VectorData
+    - Data
+  - source: ndx-stimulation.extensions.yaml
+  version: 0.1.0
