@@ -1,5 +1,6 @@
 import os
-from pynwb import load_namespaces, get_class
+from pynwb import load_namespaces
+
 
 # Set path of the namespace.yaml file to the expected install location
 ndx_stimulation_specpath = os.path.join(
@@ -21,6 +22,5 @@ if not os.path.exists(ndx_stimulation_specpath):
 # Load the namespace
 load_namespaces(ndx_stimulation_specpath)
 
-# TODO: import your classes here or define your class using get_class to make
-# them accessible at the package level
-TetrodeSeries = get_class('TetrodeSeries', 'ndx-stimulation')
+from .stimulus_function_table import StimulusFunctionTable
+from .stimulus_function_templates import StimulusFunctionLabMetaData

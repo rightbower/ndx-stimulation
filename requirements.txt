@@ -1,2 +1,5 @@
 pynwb>=1.3.0
+hdmf>=3.0.0
 hdmf_docutils
+# nwb_docutils
+# ndx_external_resources

@@ -26,9 +26,11 @@ groups:
       dtype: text
       doc: The float parameter units.
     doc: Column storing the float parameter containers for the 1D stimulus waveforms.
+    quantity: '?'
   - name: float_parameters_index
     neurodata_type_inc: VectorIndex
     doc: Index dataset for the float_parameters column.
+    quantity: '?'
   - name: function_parameters
     neurodata_type_inc: VectorData
     dtype:
@@ -42,11 +44,8 @@ groups:
       dtype: text
       doc: The function parameter units.
     doc: Column storing the function parameters used in the 1D stimulus waveforms.
+    quantity: '?'
   - name: function_parameters_index
     neurodata_type_inc: VectorIndex
     doc: Index dataset for the function_parameters column.
-
-
-
-
-
+    quantity: '?'
